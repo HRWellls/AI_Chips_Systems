@@ -1,0 +1,44 @@
+Vivado Simulator v2021.1
+Copyright 1986-1999, 2001-2021 Xilinx, Inc. All Rights Reserved.
+Running: D:/HardwareDev/Xilinx/Vivado/2021.1/bin/unwrapped/win64.o/xelab.exe -wto 0f3d2dac1d5a4bc2a9b84ef45cbb9110 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot core_sim_behav xil_defaultlib.core_sim xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+WARNING: [VRFC 10-3091] actual bit length 1 differs from formal bit length 5 for port 'rs2Addr_out' [F:/CoursesFilesAndMisc/25S1S2_AI_Chips_and_Systems_TA/ai_chip_stu_exp1/code/core/EXE_stage.v:88]
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 1 for port 'EN' [F:/CoursesFilesAndMisc/25S1S2_AI_Chips_and_Systems_TA/ai_chip_stu_exp1/code/core/EXE_stage.v:126]
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 1 for port 'ena' [F:/CoursesFilesAndMisc/25S1S2_AI_Chips_and_Systems_TA/ai_chip_stu_exp1/code/core/RAM_B.v:32]
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 1 for port 'rsta' [F:/CoursesFilesAndMisc/25S1S2_AI_Chips_and_Systems_TA/ai_chip_stu_exp1/code/core/RAM_B.v:33]
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 1 for port 'regcea' [F:/CoursesFilesAndMisc/25S1S2_AI_Chips_and_Systems_TA/ai_chip_stu_exp1/code/core/RAM_B.v:34]
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 1 for port 'sleep' [F:/CoursesFilesAndMisc/25S1S2_AI_Chips_and_Systems_TA/ai_chip_stu_exp1/code/core/RAM_B.v:35]
+WARNING: [VRFC 10-5021] port 'injectsbiterra' is not connected on this instance [F:/CoursesFilesAndMisc/25S1S2_AI_Chips_and_Systems_TA/ai_chip_stu_exp1/code/core/RAM_B.v:16]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.REG32
+Compiling module xil_defaultlib.add_32
+Compiling module xil_defaultlib.MUX2T1_32
+Compiling module xil_defaultlib.ROM_D
+Compiling module xil_defaultlib.IF_stage
+Compiling module xil_defaultlib.REG_IF_ID
+Compiling module xil_defaultlib.CtrlUnit
+Compiling module xil_defaultlib.Regs
+Compiling module xil_defaultlib.ImmGen
+Compiling module xil_defaultlib.MUX4T1_32
+Compiling module xil_defaultlib.cmp_32
+Compiling module xil_defaultlib.HazardDetectionUnit
+Compiling module xil_defaultlib.ID_stage
+Compiling module xil_defaultlib.REG_ID_EX
+Compiling module xil_defaultlib.ALU
+Compiling module xil_defaultlib.Vdot
+Compiling module xpm.xpm_memory_base(MEMORY_TYPE=0,ME...
+Compiling module xpm.xpm_memory_spram(MEMORY_SIZE=819...
+Compiling module xil_defaultlib.RAM_B
+Compiling module xil_defaultlib.EXE_stage
+Compiling module xil_defaultlib.EXE_Hazard
+Compiling module xil_defaultlib.REG_EX_WB
+Compiling module xil_defaultlib.WB_stage
+Compiling module xil_defaultlib.RV32core
+Compiling module xil_defaultlib.core_sim
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot core_sim_behav
