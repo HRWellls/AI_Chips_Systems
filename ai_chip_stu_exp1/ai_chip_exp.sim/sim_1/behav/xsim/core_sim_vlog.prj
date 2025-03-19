@@ -8,8 +8,10 @@ verilog xil_defaultlib  \
 "../../../../code/core/ID_stage.v" \
 "../../../../code/core/IF_stage.v" \
 "../../../../code/core/ImmGen.v" \
+"../../../../code/common/MULT4.V" \
 "../../../../code/common/MUX2T1_32.v" \
 "../../../../code/common/MUX4T1_32.v" \
+"../../../../ai_chip_exp.srcs/sources_1/new/Mult8.v" \
 "../../../../code/core/RAM_B.v" \
 "../../../../code/common/REG32.v" \
 "../../../../code/core/REG_EX_WB.v" \

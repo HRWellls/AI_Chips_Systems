@@ -42,5 +42,24 @@ Time:  79ns, pass.
 Time:  81ns, pass.
 Time:  83ns, pass.
 Time:  85ns, pass.
-Time:  87ns, reg_x[3] expected 0x0000093b but get 0xxxxxxxxx
-$stop called at time : 89 ns : File "F:/CoursesFilesAndMisc/25S1S2_AI_Chips_and_Systems_TA/ai_chip_stu_exp1/code/sim/core_sim.v" Line 1903
+Time:  87ns, pass.
+Time:  89ns, pass.
+Time:  91ns, pass.
+Time:  93ns, pass.
+Time:  95ns, pass.
+Time:  97ns, pass.
+Time:  99ns, pass.
+Time: 101ns, pass.
+Time: 103ns, pass.
+Time: 105ns, pass.
+Time: 107ns, pass.
+Time: 109ns, pass.
+Time: 111ns, pass.
+Time: 113ns, pass.
+Time: 115ns, pass.
+Time: 117ns, pass.
+Time: 119ns, pass.
+Time: 121ns, pass.
+Time: 123ns, pass.
+All samples passed! Congrats!
+$stop called at time : 125 ns : File "E:/Users/wangminkai/Desktop/3GRADESS/AI_CHIPSandSYSTEMS/lab_code/AI_Chips_Systems/ai_chip_stu_exp1/code/sim/core_sim.v" Line 2662

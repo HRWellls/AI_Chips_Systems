@@ -151,9 +151,13 @@ module CtrlUnit(
 
     assign memAccType = funct3;
 
-    assign dataToReg = // Complete the signal here.
+    wire VDOT = VDOTop ;
+    assign dataToReg = 
+        {2{VDOT}}    & 2'b01 |  // Data from memory (Load instructions)
+        {2{R_valid | I_valid | AUIPC | LUI | JAL | JALR}} & 2'b10 |  // Data from PC+4 (for JAL and JALR)
+        {2{L_valid}} & 2'b00; // Data from ALU (R-type, I-type, LUI, AUIPC)
 
-    assign regWrite = // Complete the signal here.
+    assign regWrite = R_valid | I_valid | L_valid | LUI | AUIPC | JAL | JALR | VDOT; 
 
     assign memWrite = S_valid;
 

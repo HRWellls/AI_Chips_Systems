@@ -7,7 +7,7 @@ module Mult4(
     input[3:0] A, B,
     output[7:0] res
 );
-
+    
     wire [7:0] A0,A1,A2,A3;
     assign A0[3:0] = A;
     assign A0[7:4] = 4'b0;

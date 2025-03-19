@@ -145,12 +145,30 @@ module   EXE_stage( input clk,
     // Please add bubbles to make sure that the final ALUOut_EXE, MemDataOut_EXE and VDOTOut_EXE are ready after 3 cycles.
 
     // You may add some code here...
+    reg [31:0] alu_reg1, alu_reg2;
+    reg [31:0] mem_reg;
+    reg [1:0] dataToReg_reg1, dataToReg_reg2;
 
-    assign ALUOut_EXE = // Complete the signal here.
-    assign MemDataOut_EXE = // Complete the signal here.
-    assign VDOTOut_EXE = // Complete the signal here.
-    assign dataToReg_EXE = // Complete the signal here.
+    always @(posedge clk or posedge rst) begin
+        if (rst) begin
+            alu_reg1 <= 32'b0;
+            alu_reg2 <= 32'b0;
+            mem_reg <= 32'b0;
+            dataToReg_reg1 <= 2'b0;
+            dataToReg_reg2 <= 2'b0;
+        end else begin
+            alu_reg1 <= ALUOut;
+            alu_reg2 <= alu_reg1;
+            mem_reg <= MemDataOut;
+            dataToReg_reg1 <= dataToReg_tmp;
+            dataToReg_reg2 <= dataToReg_reg1;
+        end
+    end
 
+    assign ALUOut_EXE = alu_reg2;
+    assign MemDataOut_EXE = mem_reg;
+    assign VDOTOut_EXE = VDOTOut;
+    assign dataToReg_EXE = dataToReg_reg2;
     // Below logics are for hazard dection, do not change them.
 
     wire [1:0] op_type; // For hazard detection. 0: ALU, 1: MEM, 2: MUL

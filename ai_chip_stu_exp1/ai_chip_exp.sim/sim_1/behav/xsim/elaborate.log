@@ -1,20 +1,26 @@
-Vivado Simulator v2021.1
-Copyright 1986-1999, 2001-2021 Xilinx, Inc. All Rights Reserved.
-Running: D:/HardwareDev/Xilinx/Vivado/2021.1/bin/unwrapped/win64.o/xelab.exe -wto 0f3d2dac1d5a4bc2a9b84ef45cbb9110 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot core_sim_behav xil_defaultlib.core_sim xil_defaultlib.glbl -log elaborate.log 
+Vivado Simulator v2023.2
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
+Running: D:/DOWNLOAD/Vivado/Vivado/2023.2/bin/unwrapped/win64.o/xelab.exe --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot core_sim_behav xil_defaultlib.core_sim xil_defaultlib.glbl -log elaborate.log 
 Using 2 slave threads.
 Starting static elaboration
 Pass Through NonSizing Optimizer
-WARNING: [VRFC 10-3091] actual bit length 1 differs from formal bit length 5 for port 'rs2Addr_out' [F:/CoursesFilesAndMisc/25S1S2_AI_Chips_and_Systems_TA/ai_chip_stu_exp1/code/core/EXE_stage.v:88]
-WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 1 for port 'EN' [F:/CoursesFilesAndMisc/25S1S2_AI_Chips_and_Systems_TA/ai_chip_stu_exp1/code/core/EXE_stage.v:126]
-WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 1 for port 'ena' [F:/CoursesFilesAndMisc/25S1S2_AI_Chips_and_Systems_TA/ai_chip_stu_exp1/code/core/RAM_B.v:32]
-WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 1 for port 'rsta' [F:/CoursesFilesAndMisc/25S1S2_AI_Chips_and_Systems_TA/ai_chip_stu_exp1/code/core/RAM_B.v:33]
-WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 1 for port 'regcea' [F:/CoursesFilesAndMisc/25S1S2_AI_Chips_and_Systems_TA/ai_chip_stu_exp1/code/core/RAM_B.v:34]
-WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 1 for port 'sleep' [F:/CoursesFilesAndMisc/25S1S2_AI_Chips_and_Systems_TA/ai_chip_stu_exp1/code/core/RAM_B.v:35]
-WARNING: [VRFC 10-5021] port 'injectsbiterra' is not connected on this instance [F:/CoursesFilesAndMisc/25S1S2_AI_Chips_and_Systems_TA/ai_chip_stu_exp1/code/core/RAM_B.v:16]
+WARNING: [VRFC 10-3091] actual bit length 1 differs from formal bit length 5 for port 'rs2Addr_out' [E:/Users/wangminkai/Desktop/3GRADESS/AI_CHIPSandSYSTEMS/lab_code/AI_Chips_Systems/ai_chip_stu_exp1/code/core/EXE_stage.v:88]
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 1 for port 'EN' [E:/Users/wangminkai/Desktop/3GRADESS/AI_CHIPSandSYSTEMS/lab_code/AI_Chips_Systems/ai_chip_stu_exp1/code/core/EXE_stage.v:126]
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 1 for port 'ena' [E:/Users/wangminkai/Desktop/3GRADESS/AI_CHIPSandSYSTEMS/lab_code/AI_Chips_Systems/ai_chip_stu_exp1/code/core/RAM_B.v:32]
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 1 for port 'rsta' [E:/Users/wangminkai/Desktop/3GRADESS/AI_CHIPSandSYSTEMS/lab_code/AI_Chips_Systems/ai_chip_stu_exp1/code/core/RAM_B.v:33]
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 1 for port 'regcea' [E:/Users/wangminkai/Desktop/3GRADESS/AI_CHIPSandSYSTEMS/lab_code/AI_Chips_Systems/ai_chip_stu_exp1/code/core/RAM_B.v:34]
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 1 for port 'sleep' [E:/Users/wangminkai/Desktop/3GRADESS/AI_CHIPSandSYSTEMS/lab_code/AI_Chips_Systems/ai_chip_stu_exp1/code/core/RAM_B.v:35]
+WARNING: [VRFC 10-5021] port 'injectsbiterra' is not connected on this instance [E:/Users/wangminkai/Desktop/3GRADESS/AI_CHIPSandSYSTEMS/lab_code/AI_Chips_Systems/ai_chip_stu_exp1/code/core/RAM_B.v:16]
 Completed static elaboration
 Starting simulation data flow analysis
 Completed simulation data flow analysis
 Time Resolution for simulation is 1ps
+Compiling package xpm.$unit_xpm_cdc_sv_220102727
+Compiling package xpm.axi_xil_sb_pkg_xpm_nsu
+Compiling package xpm.axi_data_integrity_checker_xpm_n...
+Compiling package xpm.xpm_axi_data_integrity_checker_n...
+Compiling package xpm.xpm_axi_xil_sb_pkg_nmu
 Compiling module xil_defaultlib.REG32
 Compiling module xil_defaultlib.add_32
 Compiling module xil_defaultlib.MUX2T1_32
@@ -30,6 +36,8 @@ Compiling module xil_defaultlib.HazardDetectionUnit
 Compiling module xil_defaultlib.ID_stage
 Compiling module xil_defaultlib.REG_ID_EX
 Compiling module xil_defaultlib.ALU
+Compiling module xil_defaultlib.Mult4
+Compiling module xil_defaultlib.Mult8
 Compiling module xil_defaultlib.Vdot
 Compiling module xpm.xpm_memory_base(MEMORY_TYPE=0,ME...
 Compiling module xpm.xpm_memory_spram(MEMORY_SIZE=819...
